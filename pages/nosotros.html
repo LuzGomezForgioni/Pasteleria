@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <!--Link FontAwesome-->
     <script src="https://kit.fontawesome.com/c1486b617e.js" crossorigin="anonymous"></script>
+    <!-- Link AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -37,6 +39,35 @@
             </nav>
         </div>
     </header>
+
+    <main>
+        <section class="section--nos" data-aos="fade-up" data-aos-duration="1500" data-aos-duration="500">
+            <div>
+                <p>Somos un pequeño pero <strong>acogedor</strong> local, en el cual pensamos en <strong>brindarte todo lo mejor</strong> para que tu experiencia sea <strong>única e inigualable</strong> y que nos sigas eligiendo día a día.</p>
+            </div>
+            <div>
+                <img src="../img/nos1.png" alt="Como trabajamos">
+            </div>
+        </section>
+
+        <section class="section--nos" data-aos="fade-right" data-aos-duration="1500" data-aos-duration="500">
+            <div>
+                <img src="../img/nos2.png" alt="Ingredientes">
+            </div>
+            <div>
+                <p class="p-right">En nuestras cocinas utilizamos los mejores ingredientes con la más alta calidad y con una completa higiene porque <strong>¡queremos lo mejor para vos y siempre cuidarte!</strong></p>
+            </div>
+        </section>
+
+        <section class="section--nos" data-aos="fade-left" data-aos-duration="1500" data-aos-duration="500">
+            <div>
+                <p>En nuestro local ofrecemos una experiencia 100% perzonalizada adecuándose a las necesidades de cada uno de nuestros clientes y con la mejor atención al público. <strong>¿Nos venís a conocer?</strong></p>
+            </div>
+            <div>
+                <img src="../img/nos3.png" alt="Atención al Cliente">
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="footer1">
@@ -65,6 +96,11 @@
         crossorigin="anonymous"></script>
     <!-- Link JS -->
     <script src="../app.js"></script>
+    <!-- Libreria AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

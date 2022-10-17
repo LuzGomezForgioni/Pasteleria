@@ -11,7 +11,15 @@
     align-items: center;
     background-color: bisque;
     padding: 0 20px;
-    position: sticky;
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    display: flex;
+    place-content: space-between;
+}
+
+header{
+    height: 82px;
 }
 
 a {
@@ -33,11 +41,6 @@ header ul {
     display: flex;
     place-content: space-between;
     margin: 0;
-}
-
-header div.contenedor {
-    display: flex;
-    place-content: space-between;
 }
 
 header a {
@@ -123,61 +126,56 @@ header a {
 }
 
 /* MAIN CARROUSEL  */
-.slider-frame {
-    width: auto;
-    ;
-    height: 550px;
+.carrousel {
+    width: 80%;
+    max-width: 120em;
+    margin: 0 auto;
     overflow: hidden;
 }
 
-.slider-frame ul {
-    display: flex;
-    padding: 0;
+.carrousel .grande {
     width: 400%;
-    animation: slide 20s infinite alternate ease-in-out;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    transition: all 0.8s ease;
+    transform: translateX(0%);
 }
 
-.slider-frame li {
+.carrousel .img {
+    width: calc(100% / 4 - 1em);
+    min-height: 10vh;
+}
+
+.carrousel .puntos {
     width: 100%;
-    list-style: none;
+    padding-bottom: 0.4em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.slider-frame img {
-    width: 100%;
+.carrousel .punto {
+    width: 1.7em;
+    height: 1.7em;
+    margin: 0 1em;
+    color: #393939;
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    border: 1px solid #FCB681;
+    cursor: pointer;
+    box-shadow: 0.6em 0.6em 1.2em #c9c9c9, -0.6em -0.6em 1.2em #ffffff, inset 0 0 0 transparent, inset 0 0 0 transparent;
 }
 
-@keyframes slide {
-    0% {
-        margin-left: 0;
-    }
+.carrousel .punto.activo {
+    background-color: bisque;
+}
 
-    20% {
-        margin-left: 0;
-    }
-
-    25% {
-        margin-left: -100%;
-    }
-
-    45% {
-        margin-left: -100%;
-    }
-
-    50% {
-        margin-left: -200%;
-    }
-
-    70% {
-        margin-left: -200%;
-    }
-
-    75% {
-        margin-left: -300%;
-    }
-
-    100% {
-        margin-left: -300%;
-    }
+li {
+    list-style-type: none;
 }
 
 /* FOOTER */
@@ -267,4 +265,84 @@ footer .footer2 {
     font-size: 30px;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+/* CONTACTO */
+.form {
+    width: 400px;
+    margin: auto;
+}
+
+.h2--contacto {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 30px;
+}
+
+.btn {
+    font-weight: 600;
+    background-color: #FCB681;
+    border: #121212 solid 1px;
+}
+
+.btn:first-child:hover {
+    background-color: bisque;
+    border: #FCB681 solid 1px;
+}
+
+/* NOSOTROS */
+
+main section div {
+    width: 50%;
+}
+
+.section--nos {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0;
+}
+
+main section div img {
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+main section div p {
+    margin: 0 0 0 50px;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.p-right {
+    margin: 0 50px 0 0;
+}
+
+.section--i {
+    text-align: center;
+}
+
+/* PRODUCTOS */
+.sec--productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sec--productos div{
+    text-align: center;
+    font-weight: 600;
+}
+
+.sec--productos div button{
+    padding: 5px 8px;
+    border-radius: 5px;
+    background-color: #FCB681;
+    border: #121212 solid 1px;
+}
+
+.sec--productos div button:hover {
+    background-color: bisque;
+    border: #FCB681 solid 1px;
 }
