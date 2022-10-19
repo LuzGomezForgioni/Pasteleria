@@ -275,7 +275,7 @@ footer .footer2 {
 
 .h2--contacto {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.4em;
     padding: 30px;
 }
 
@@ -290,9 +290,19 @@ footer .footer2 {
     border: #FCB681 solid 1px;
 }
 
+.main--contacto{
+    display: flex;
+    align-items: center;
+}
+
+.sec--contacto{
+    width: 50%;
+    text-align: center;
+}
+
 /* NOSOTROS */
 
-main section div {
+.div--nos {
     width: 50%;
 }
 
@@ -328,11 +338,15 @@ main section div p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 50px;
+}
+
+.sec--productos div h4, .sec--productos div p{
+    font-weight: 600;
 }
 
 .sec--productos div{
     text-align: center;
-    font-weight: 600;
 }
 
 .sec--productos div button{

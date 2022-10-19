@@ -38,30 +38,35 @@
         </div>
     </header>
 
-    <main>
-        <h2 class="h2--contacto">Podes contactarte con nosotros a través del siguiente formulario:</h2>
-        <form class="form">
-            <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Nombre" required>
-                <label for="floatingInput">Nombre</label>
-            </div>
-            <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Apellido" required>
-                <label for="floatingInput">Apellido</label>
-            </div>
-            <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="Email" required>
-                <label for="floatingInput">Email</label>
-            </div>
-            <div class="form-floating mb-3">
-                <textarea class="form-control" placeholder="Comentarios" id="floatingTextarea2"
-                    style="height: 100px" required></textarea>
-                <label for="floatingTextarea2">Comentarios</label>
-            </div>
-            <div class="col-12">
-                <button type="submit" class="btn mb-3 w-100">Enviar</button>
-            </div>
-        </form>
+    <main class="main--contacto">
+        <section class="sec--contacto">
+            <h2 class="h2--contacto">Podes contactarte con nosotros vía <strong><a href="https://whatsapp.com" target="_blank"> What's App </a></strong>, por <strong><a href="https://gmail.com" target="_blank"> Mail </a></strong> o sino a través del siguiente formulario:</h2>
+            <form class="form" id="form" action="https://formspree.io/f/mnqrbbgd" method="POST">
+                <div class="form-floating mb-3">
+                    <input name="name" type="text" class="form-control" id="floatingInput" placeholder="Nombre" required>
+                    <label for="floatingInput">Nombre</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input name="apellido" type="text" class="form-control" id="floatingInput" placeholder="Apellido" required>
+                    <label for="floatingInput">Apellido</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input name="email" type="email" class="form-control" id="floatingInput" placeholder="Email" required>
+                    <label for="floatingInput">Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea name="textArea" class="form-control" placeholder="Comentarios" id="floatingTextarea2"
+                        style="height: 100px" required></textarea>
+                    <label for="floatingTextarea2">Comentarios</label>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn mb-3 w-100">Enviar</button>
+                </div>
+            </form>
+        </section>
+        <section class="sec--contacto">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217954.93389016393!2d-64.33443089842898!3d-31.39908397269355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses!2sar!4v1666053322985!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
     </main>
 
     <footer>
