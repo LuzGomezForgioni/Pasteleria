@@ -39,7 +39,7 @@ punto.forEach((cadaPunto, i) => {
 
 // Consumir API en sección PRODUCTOS
 const pedirProductos = async () => {
-	const resp = await fetch('https://mocki.io/v1/ace8da49-4fc4-482a-839e-dfa9fc101fd1')
+	const resp = await fetch('https://mocki.io/v1/18b5fe9f-69cb-479e-87c1-dda44c3e2932')
 	const data = await resp.json()
 
 	data.forEach((producto)=>{
