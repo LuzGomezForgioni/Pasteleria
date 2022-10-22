@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "imagen": "https://res.cloudinary.com/dte1karmc/image/upload/v1666400156/Pasteleria/pavlova_e0bm1s.png",
+        "nombreProducto": "Pavlova",
+        "precio": 2700
+    },
+    {
+        "id": 2,
+        "imagen": "https://res.cloudinary.com/dte1karmc/image/upload/v1666400156/Pasteleria/lemonPie_lef6g5.png",
+        "nombreProducto": "Lemon Pie",
+        "precio": 2500
+    },
+    {
+        "id": 3,
+        "imagen": "https://res.cloudinary.com/dte1karmc/image/upload/v1666400156/Pasteleria/chocotorta_rxzid5.png",
+        "nombreProducto": "Chocotorta",
+        "precio": 2300
+    },
+    {
+        "id": 4,
+        "imagen": "https://res.cloudinary.com/dte1karmc/image/upload/v1666400157/Pasteleria/marquise_zpfsx7.png",
+        "nombreProducto": "Marquise",
+        "precio": 2500
+    },
+    {
+        "id": 5,
+        "imagen": "https://res.cloudinary.com/dte1karmc/image/upload/v1666400155/Pasteleria/cheesecakeOreo_eazcac.png",
+        "nombreProducto": "Cheesecake de Oreo",
+        "precio": 2700
+    },
+    {
+        "id": 6,
+        "imagen": "https://res.cloudinary.com/dte1karmc/image/upload/v1666400156/Pasteleria/rogel_rbfjjx.png",
+        "nombreProducto": "Rogel",
+        "precio": 3000
+    },
+    {
+        "id": 7,
+        "imagen": "https://res.cloudinary.com/dte1karmc/image/upload/v1666400155/Pasteleria/tartaCoco_hpqu11.png",
+        "nombreProducto": "Tarta de Coco",
+        "precio": 2600
+    },
+    {
+        "id": 8,
+        "imagen": "https://res.cloudinary.com/dte1karmc/image/upload/v1666400156/Pasteleria/selvaNegra_cv0i64.png",
+        "nombreProducto": "Selva Negra",
+        "precio": 2500
+    },
+    {
+        "id": 9,
+        "imagen": "https://res.cloudinary.com/dte1karmc/image/upload/v1666400155/Pasteleria/tartaFrutal_buelte.png",
+        "nombreProducto": "Tarta Frutal",
+        "precio": 2600
+    },
+    {
+        "id": 10,
+        "imagen": "https://res.cloudinary.com/dte1karmc/image/upload/v1666400155/Pasteleria/chaja_raousi.png",
+        "nombreProducto": "Chajá",
+        "precio": 2700
+    },
+    {
+        "id": 11,
+        "imagen": "https://res.cloudinary.com/dte1karmc/image/upload/v1666400155/Pasteleria/cheesecakeFrutillas_gvqtjz.png",
+        "nombreProducto": "Cheesecake de Frutillas",
+        "precio": 2700
+    },
+    {
+        "id": 12,
+        "imagen": "https://res.cloudinary.com/dte1karmc/image/upload/v1666400155/Pasteleria/brownie_vqjd87.png",
+        "nombreProducto": "Brownie",
+        "precio": 2500
+    }
+]

@@ -6,20 +6,20 @@
 }
 
 /* HEADER Y NAV */
-
 .contenedor {
     align-items: center;
     background-color: bisque;
     padding: 0 20px;
     position: fixed;
-    z-index: 100;
+    z-index: 150;
     width: 100vw;
+    height: 70px;
     display: flex;
     place-content: space-between;
 }
 
 header{
-    height: 82px;
+    height: 80px;
 }
 
 a {
@@ -178,6 +178,34 @@ li {
     list-style-type: none;
 }
 
+/* SERVICIOS */
+.servicios{
+    display: flex;
+    text-align: center;
+    margin: 45px;
+    gap: 30px;
+}
+
+.contenedor__servicios{
+    display: flex;
+    place-content: center;
+}
+
+.contenedor__servicios h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor__servicios i{
+    font-size: 18px;
+    margin: 2px 0 0 10px;
+}
+
+.servicios p{
+    margin: 0;
+    font-size: 15px;
+}
+
 /* FOOTER */
 footer div h4 {
     padding-bottom: 15px;
@@ -300,7 +328,83 @@ footer .footer2 {
     text-align: center;
 }
 
+/* FORMULARIO */
+
+.form__input-error {
+	font-size: 12px;
+	display: none;
+}
+
+.form__input-error-activo {
+	display: block;
+}
+
+.form__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.form__checkbox {
+	margin-right: 10px;
+}
+
+.form__mensaje {
+	line-height: 40px;
+	background: #F66060;
+	border-radius: 5px;
+	display: none;
+}
+
+.form__mensaje-activo {
+	display: block;
+}
+
+.form__mensaje p {
+    margin-bottom: 15px;
+}
+
+.form__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.form__mensaje-exito-activo {
+	display: block;
+}
+
+.form__label{
+    margin-bottom: 15px;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.form__grupo-correcto .form__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.form__grupo-incorrecto .form__label {
+	color: #bb2929;
+}
+
+.form__grupo-incorrecto .form__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.form__grupo-incorrecto .form__input {
+	border: 3px solid #bb2929;
+}
+
+
 /* NOSOTROS */
+.main--nos{
+    overflow-x: hidden;
+}
 
 .div--nos {
     width: 50%;
@@ -310,7 +414,7 @@ footer .footer2 {
     display: flex;
     align-items: center;
     text-align: center;
-    margin: 30px 0;
+    margin: 80px 0;
 }
 
 main section div img {
@@ -319,7 +423,7 @@ main section div img {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-main section div p {
+.div--nos p {
     margin: 0 0 0 50px;
     font-size: 20px;
     line-height: 35px;
@@ -329,7 +433,7 @@ main section div p {
     margin: 0 50px 0 0;
 }
 
-.section--i {
+.img--inicio {
     text-align: center;
 }
 
