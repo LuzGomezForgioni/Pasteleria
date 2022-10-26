@@ -58,10 +58,7 @@ pedirProductos()
 // FORMULARIO CONTACTO (Enviar a formspree)
 const $form = document.querySelector('#form')
 
-$form.addEventListener('submit', handleSubmit)
-
-async function handleSubmit(event) {
-	event.preventDefault()
+async function sendSubmit() {
 	const form = new FormData(this)
 	const response = await fetch(this.action, {
 		method: this.method,
@@ -149,6 +146,8 @@ form.addEventListener('submit', (e) => {
 
 	const terminos = document.getElementById('terminos');
 	if (campos.apellido && campos.nombre && campos.correo && campos.telefono && campos.comentarios && terminos.checked) {
+		sendSubmit();
+
 		form.reset();
 
 		document.getElementById('form__mensaje-exito').classList.add('form__mensaje-exito-activo');
