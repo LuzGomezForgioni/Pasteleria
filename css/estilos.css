@@ -403,15 +403,13 @@ main section div img {
 /* MEDIA QUERIS */
 @media only screen and (min-width: 950px) and (max-width: 1330px) {
     .img--inicio img {
-        width: 115vw;
-        margin-left: -40px;
+        width: 100vw;
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 949x) {
+@media only screen and (min-width: 768px) and (max-width: 949px){
     .img--inicio img {
-        width: 115vw;
-        margin-left: -40px;
+        width: 100vw;
     }
 
     .carrousel {
@@ -525,8 +523,7 @@ main section div img {
     }
 
     .img--inicio img {
-        width: 110vw;
-        margin-left: -24px;
+        width: 96vw;
     }
 
     .carrousel {
@@ -595,6 +592,10 @@ main section div img {
         margin: 20px 25px;
     }
 
+    .div--nos .p-right {
+        margin: 20px 25px;
+    }
+
     .div--nos {
         width: 100%;
     }
@@ -605,6 +606,7 @@ main section div img {
 }
 
 @media only screen and (max-width: 480px) {
+    
     header div.contenedor nav {
         display: none;
     }
@@ -680,8 +682,7 @@ main section div img {
     }
 
     .img--inicio img {
-        width: 110vw;
-        margin-left: -18px;
+        width: 95vw;
     }
 
     .carrousel {
@@ -705,9 +706,9 @@ main section div img {
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
-        width: 100vw;
+        width: 95vw;
         justify-content: center;
-        margin: 20px -8px 60px;
+        margin: 20px 0;
     }
 
     .main--contacto {
@@ -752,6 +753,10 @@ main section div img {
 
     .div--nos p {
         font-size: 16px;
+        margin: 20px 30px;
+    }
+
+    .div--nos .p-right {
         margin: 20px 30px;
     }
 
