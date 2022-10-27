@@ -58,17 +58,25 @@ pedirProductos()
 // FORMULARIO CONTACTO (Enviar a formspree)
 const $form = document.querySelector('#form')
 
-async function sendSubmit() {
-	const form = new FormData(this)
-	const response = await fetch(this.action, {
-		method: this.method,
-		body: form,
-		headers: {
-			'Accept': 'application/json'
+$form.addEventListener('submit', handleSubmit)
+
+async function handleSubmit(event) {
+	event.preventDefault()
+
+	if (formIsValid())
+	{
+		const form = new FormData(this)
+		const response = await fetch(this.action, {
+			method: this.method,
+			body: form,
+			headers: {
+				'Accept': 'application/json'
+			}
+		})
+		if (response.ok) {
+			console.log('Se envio correctamente el formulario')
 		}
-	})
-	if (response.ok) {
-		console.log('Se envio correctamente el formulario')
+		resetForm();
 	}
 };
 
@@ -132,36 +140,37 @@ const validarCampo = (expresion, input, campo) => {
 }
 
 inputs.forEach((input) => {
-	input.addEventListener('keyup', validarForm);
 	input.addEventListener('blur', validarForm);
 });
 
 textarea.forEach((textarea) => {
-	textarea.addEventListener('keyup', validarForm);
 	textarea.addEventListener('blur', validarForm);
 });
 
-form.addEventListener('submit', (e) => {
-	e.preventDefault();
+function formIsValid(){
+	breturn = false;
 
 	const terminos = document.getElementById('terminos');
 	if (campos.apellido && campos.nombre && campos.correo && campos.telefono && campos.comentarios && terminos.checked) {
-		sendSubmit();
-
-		form.reset();
-
-		document.getElementById('form__mensaje-exito').classList.add('form__mensaje-exito-activo');
-		setTimeout(() => {
-			document.getElementById('form__mensaje-exito').classList.remove('form__mensaje-exito-activo');
-		}, 5000);
-
-		document.querySelectorAll('.form__grupo-correcto').forEach((icono) => {
-			icono.classList.remove('form__grupo-correcto');
-		});
+		breturn=true;
 	} else {
 		document.getElementById('form__mensaje').classList.add('form__mensaje-activo');
 		setTimeout(() => {
 			document.getElementById('form__mensaje').classList.remove('form__mensaje-activo');
 		}, 5000);
 	}
-});
+	return breturn;
+};
+
+function resetForm(){
+	form.reset();
+
+	document.getElementById('form__mensaje-exito').classList.add('form__mensaje-exito-activo');
+	setTimeout(() => {
+		document.getElementById('form__mensaje-exito').classList.remove('form__mensaje-exito-activo');
+	}, 5000);
+
+	document.querySelectorAll('.form__grupo-correcto').forEach((icono) => {
+		icono.classList.remove('form__grupo-correcto');
+	});
+}
